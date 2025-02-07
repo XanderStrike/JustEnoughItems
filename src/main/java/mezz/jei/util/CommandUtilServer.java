@@ -49,8 +49,8 @@ public final class CommandUtilServer {
 		}
 
 		List<String> commandStrings = new ArrayList<>();
-		commandStrings.add(senderName);
-		commandStrings.add(itemResourceLocation.toString());
+		// commandStrings.add(senderName);
+		commandStrings.add(itemResourceLocation.toString().substring(itemResourceLocation.toString().indexOf(':') + 1));
 		commandStrings.add(String.valueOf(amount));
 		commandStrings.add(String.valueOf(itemStack.getMetadata()));
 
